@@ -4,11 +4,13 @@ import praw
 import discord
 from datetime import datetime
 
-pwdd  = os.environ['password']
-uname  = os.environ['username']
-agent  = os.environ['user_agent']
-clientKey  = os.environ['clientkey']
-client_id  = os.environ['client_ID']
+pwdd  = os.environ['password'] #PUT YOUR REDDIT DEVELOPER PASSWORD
+uname  = os.environ['username']  #PUT YOUR REDDIT DEVELOPER USERNAME
+agent  = os.environ['user_agent']  #PUT YOUR REDDIT DEVELOPER USER_AGENT
+clientKey  = os.environ['clientkey']  #PUT YOUR REDDIT DEVELOPER CLIENTKEY
+client_id  = os.environ['client_ID'] #PUT YOUR REDDIT DEVELOPER client_ID
+
+#below function converts the posts into JSON/KEY-VALUE format
 
 
 def Ask(b,h,g):  
