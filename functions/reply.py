@@ -37,8 +37,7 @@ def Ask(b,h,g):
     for i in b:
 
       if not i.stickied:
-        #print(i.title)
-        #print(i.preview['images'][0]['source']['url'])
+
         title=i.title
         try:
           url_image=(i.preview['images'][0]['source']['url'])
@@ -63,9 +62,6 @@ def Ask(b,h,g):
         lis.append(dic)
         
     return lis
-        #return i.title, i.preview['images'][0]['source']['url']
-        #print("Question: "+i.title)
-        #print()
         
         
   if h=='hot':
@@ -74,8 +70,6 @@ def Ask(b,h,g):
     for i in b:
 
       if not i.stickied:
-        #print(i.title)
-        #print(i.preview['images'][0]['source']['url'])
         title=i.title
         try:
           url_image=(i.preview['images'][0]['source']['url'])
